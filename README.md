@@ -5,8 +5,8 @@ C语言实现Linux ls命令
 
 一、opendir - 打开一个目录
 
-#include <sys/types.h> 
-#include <dirent.h>
+#include <sys/types.h>  
+#include <dirent.h>  
 DIR *opendir(const char *name);
 
 描述：
@@ -17,8 +17,8 @@ opendir函数，打开成功，返回指向目录流的指针；打开失败，�
 
 二、readdir - 读取一个目录
 
-#include <sys/types.h>
-#include <dirent.h>
+#include <sys/types.h>  
+#include <dirent.h>  
 struct dirent *readdir(DIR *dir);
 
 描述：
@@ -41,8 +41,8 @@ readdir函数，成功时返回一个指向dirent结构体的指针；失败时�
 
 三、closedir - 关闭一个目录
 
-#include <sys/types.h>
-#include <dirent.h>
+#include <sys/types.h>  
+#include <dirent.h>  
 int closedir(DIR *dir);
 
 描述：
